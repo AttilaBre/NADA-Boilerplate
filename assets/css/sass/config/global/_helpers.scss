@@ -1,0 +1,76 @@
+/*
+|------------------------------------------------------------
+| Helpers - Classes
+|------------------------------------------------------------
+*/
+:root {
+	--well-border-radius: 10px;
+}
+
+.clearfix  {
+	*zoom:1;
+
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*------------------------- Display -------------------------*/
+.hide 			{ display: none; }
+.block 			{ display: block; }
+.inline-block 	{ display: inline-block; }
+.hidden { visibility: hidden;}
+
+/*------------------------- Table -------------------------*/
+.table { display: table; width: 100%; }
+.table-cell { display: table-cell; }
+.table-row { display: table-row;}
+.table-header-group { display: table-header-group; }
+.container-table { height: 100%; width: 100%; display: table; }
+.vertical-center-row { display: table-cell; vertical-align: middle; }
+
+/*------------------------- Positions -------------------------*/
+.relative 	{ position: relative; }
+.absolute 	{ position: absolute; }
+.fixed 		{ position: fixed; }
+.sticky 	{ position: sticky; }
+
+/*------------------------- Text Alignment -------------------------*/
+.text-left 		{ text-align: left; }
+.text-center 	{ text-align: center; }
+.text-right 	{ text-align: right; }
+.text-justify 	{ text-align: justify; }
+
+/*------------------------- Text Transform -------------------------*/
+.caps 		{ text-transform: uppercase; }
+.lowcase 	{ text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.italic 	{ font-style: italic; }
+.oblique 	{ font-style: oblique; }
+.bold 		{ font-weight: 700; }
+.normal 	{ font-weight: 400; }
+
+/*------------------------- Float -------------------------*/
+.fleft 	{ float: left; }
+.fright { float: right; }
+.fnone 	{ float: none; }
+
+/*------------------------- Direction -------------------------*/
+.rtl { direction: rtl; }
+.ltr { direction: ltr; }
+
+/*------------------------- Width / Height -------------------------*/
+.heightMax { height: 100%; }
+.widthMax { width: 100%; }

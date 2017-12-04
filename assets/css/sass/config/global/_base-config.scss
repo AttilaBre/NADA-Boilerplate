@@ -1,0 +1,58 @@
+/*  ==========================================================================
+	BASE | BASE CONFIG
+	========================================================================== */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+
+}
+
+::selection          { color: #FFF; background-color: #3D3D3D; } /* NORMAL */
+::-moz-selection     { color: #FFF; background-color: #3D3D3D; } /* FIREFOX */
+::-webkit-selection  { color: #FFF; background-color: #3D3D3D; } /* WEBKIT */
+
+html,
+body {
+	width: 100%;
+	background: transparent;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+
+/* WEBKIT HACKS
+   ========================================================================== */
+html { -webkit-font-smoothing: antialiased; } /* ugly Mac OS fonts rendering */
+input,
+textarea,
+select { box-sizing: inherit; } /* user agent stylesheet default is box-sizing: border-box */
+
+
+/* WEBKIT CUSTOM input[type=search]
+   ========================================================================== */
+input[type="search"] { -webkit-appearance: textfield !important; }
+input[type="search"]::-webkit-search-cancel-button { display: none; }
+
+*:focus {
+    outline: none;
+}
